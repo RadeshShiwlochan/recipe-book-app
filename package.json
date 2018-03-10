@@ -10,7 +10,9 @@
   "author": "Radesh Shiwlochan",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^5.0.1",
     "ejs": "^2.5.7",
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "mongodb": "^3.0.4"
   }
 }
