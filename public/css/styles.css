@@ -14,37 +14,21 @@ html, body {
 	background-color: #ebe4c5;
 }
 
-.column_two {
-    grid-column: 2/3;
-    background-color: #e8d8ae;
-}
-
-.column_three {
-    grid-column: 3/4;
-    background-color: #e8d8ae;
-}
-
-.column_four {
-    grid-column: 4/5;
-    background-color: #e8d8ae;
-}
-
-.column_five {
-    grid-column: 5/6;
-    background-color: #e8d8ae;
-}
-
 .inner_wrapper {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat( auto-fit, minmax( 300px, 1fr ) );
+    background-color: #fff8ea;
     grid-gap: 5px;
-    margin:1%;
 }
 
 .button_styles {
-	background-color:orange;
+	background-color:#ff6d1f;
 	color:white;
+}
+
+.card_layout {
+	margin: 3%;
 }
 
 @media screen and ( max-width: 700px) {
