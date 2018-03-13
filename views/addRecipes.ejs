@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<% include ./partials/head %>
+</head>
+<body>
+	<% include ./partials/navbar %>
+	<div>
+		<form method="post" action="/save-recipes">
+			Recipe's Name<input type="text" name="recipe_name"><br>
+			Ingredients  <input type="text" name="ingredients"><br>
+			Directions   <input type="text" name="directions"><br>
+			Save <input type="submit">
+			<hr>
+		</form>
+	</div>	
+    <% include ./partials/footer %>	
+	</div> 
+</body>
+</html>

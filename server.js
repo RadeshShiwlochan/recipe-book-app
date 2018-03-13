@@ -11,8 +11,12 @@ app.use( bodyParser.urlencoded({ extended: false } ) );
 app.set( 'view engine', 'ejs' );
 
 let homeController = require( './controllers/home.js' );
+let addRecipesController = require( './controllers/add-recipes.js' );
 
 app.get( '/', homeController.index );
+app.get( '/add-recipes', addRecipesController.addRecipes );
+
+app.post( '/save-recipes', addRecipesController.saveRecipes );
 
 app.listen( port, () => {
 	console.log( `App Listening on port:${port}` );

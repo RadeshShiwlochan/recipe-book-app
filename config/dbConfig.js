@@ -6,7 +6,10 @@ mongodb.MongoClient.connect( uri, ( err, db ) => {
 	if ( err )
 		console.log( "ERROR IN CONNECTION TO MLAB", err );
 	else
+	{
+		console.log( "Established connection to MLab")
 	    db_connection = db;
+	}
 });
 
 module.exports.db_connection = db_connection;
