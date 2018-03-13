@@ -1,9 +1,13 @@
 require('dotenv').load();
-const express = require( 'express' );
-const app     = express();
-const port    = 3000;
+const express     = require( 'express' );
+const bodyParser  = require( 'body-parser' );
+const consolidate = require( 'consolidate' );
+const app         = express();
+const port        = 3000;
 
 app.use(express.static( 'public' ) );
+app.use( bodyParser.json() );
+app.use( bodyParser.urlencoded({ extended: false } ) );
 app.set( 'view engine', 'ejs' );
 
 let homeController = require( './controllers/home.js' );
